@@ -17,6 +17,9 @@
   --font-size: 14px;
   --font-weight: 400;
   --line-height: 1.5;
+
+  --profile-image-width: 30px;
+  --profile-image-height: 30px;
 }
 
 * {
@@ -31,6 +34,18 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+.profile-image {
+  width: var(--profile-image-width);
+  height: var(--profile-image-height);
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.character-profile-image {
+  background-image: url("./public/images/ai-profile.png");
 }
 
 .main-content {
