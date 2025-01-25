@@ -26,3 +26,15 @@
   box-sizing: border-box;
   line-height: var(--line-height);
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  background-image: url("./public/images/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
