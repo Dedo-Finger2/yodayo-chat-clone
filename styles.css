@@ -1,8 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+:root {
+  --user-chat-name-color: #84807d;
+  --user-chat-background-balloon-color: #e7e5e0;
+  --user-action-text-color: #6c8ca4;
+  --user-regular-text-color: #1f1e1d;
+
+  --ia-chat-name-color: #818182;
+  --ia-action-text-color: #aad0f2;
+  --ai-regular-text-color: #d3d2cb;
+
+  --button-background-color: #0e0907;
+  --button-text-color: #d9dac9;
+  --button-icon-color: #d9dac9;
+
+  --font-size: 14px;
+  --font-weight: 400;
+  --line-height: 1.5;
+}
+
 * {
   font-family: "Inter", serif;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
   box-sizing: border-box;
+  line-height: var(--line-height);
 }
