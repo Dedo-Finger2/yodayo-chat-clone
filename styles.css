@@ -2,7 +2,7 @@
 
 :root {
   --user-chat-name-color: #84807d;
-  --user-chat-background-balloon-color: #e7e5e0;
+  --user-chat-background-balloon-color: rgba(255, 255, 255, 0.86);
   --user-action-text-color: #6c8ca4;
   --user-regular-text-color: #1f1e1d;
 
@@ -131,17 +131,57 @@ body {
   padding: 16px;
 }
 
-.character-message-balloon {
+.message-balloon {
   display: flex;
   flex-direction: row;
   align-items: end;
   gap: 12px;
+}
 
-  & .character-message-content {
-    width: 60%;
-    border-radius: 12px;
-    padding: 20px;
-    background-color: var(--ia-chat-background-balloon-color);
-    color: var(--ai-regular-text-color);
-  }
+.message-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.character-message-content {
+  width: 70%;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: var(--ia-chat-background-balloon-color);
+  color: var(--ai-regular-text-color);
+}
+
+.user-message-content {
+  width: 70%;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: var(--user-chat-background-balloon-color);
+  color: var(--user-regular-text-color);
+}
+
+.user-message-balloon {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 2;
+}
+
+.name-above-message-content {
+  font-size: small;
+  font-weight: 600;
+  color: var(--ia-chat-name-color);
+}
+
+.character-action-text {
+  color: var(--ia-action-text-color);
+}
+.user-action-text {
+  color: var(--user-action-text-color);
 }

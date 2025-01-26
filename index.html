@@ -40,7 +40,7 @@
         <!--Message container  -->
         <div class="message-container">
           <!-- Character Balloon -->
-          <div class="character-message-balloon">
+          <div class="message-balloon character-message-balloon">
             <!-- Character Image -->
             <div class="profile-image">
               <img src="./public/images/ai-profile.png" alt="" />
@@ -48,20 +48,23 @@
             <!-- Character Image -->
 
             <!-- Message Content -->
-            <div class="character-message-content">
+            <div class="message-content character-message-content">
               <!-- Character name -->
-              <span>Lorem, ipsum dolor.</span>
+              <span class="name-above-message-content"
+                >Lorem, ipsum dolor.</span
+              >
               <!-- /Character name -->
 
               <!-- Character message content -->
               <span
                 >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Fugiat ut illum ipsam beatae commodi aperiam obcaecati
-                consectetur corrupti voluptatibus et iste eligendi molestias
-                voluptatem, enim sunt quibusdam ipsum quaerat atque officiis!
-                Officia hic quo distinctio dolores, eligendi, recusandae
-                officiis a necessitatibus facilis placeat, assumenda atque sit
-                aut exercitationem porro dolore.</span
+                consectetur
+                <span class="character-action-text">corrupti voluptatibus</span>
+                et iste eligendi molestias voluptatem, enim sunt quibusdam ipsum
+                quaerat atque officiis! Officia hic quo distinctio dolores,
+                eligendi, recusandae officiis a necessitatibus facilis placeat,
+                assumenda atque sit aut exercitationem porro dolore.</span
               >
               <!-- /Character message content -->
             </div>
@@ -70,24 +73,39 @@
           <!-- /Character Balloon -->
 
           <!-- User Balloon -->
-          <div>
+          <div class="message-balloon user-message-balloon">
+            <!-- Message Content -->
+            <div class="message-content user-message-content">
+              <!-- User name -->
+              <span class="name-above-message-content"
+                >Lorem, ipsum dolor.</span
+              >
+              <!-- /User name -->
+
+              <!-- User message content -->
+              <span
+                >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium similique, provident magnam quidem velit explicabo
+                dolor nihil neque aliquam alias numquam vero culpa dolores error
+                consequuntur!
+                <span class="user-action-text"
+                  >Molestiae, magni totam expedita molestias beatae culpa
+                  consectetur modi iusto nostrum dolor reiciendis,</span
+                >
+                voluptas aut voluptate exercitationem quidem ab assumenda!
+                Ducimus molestiae non sint placeat quaerat! Saepe dolore, quasi
+                veniam enim maxime, ad adipisci impedit, quod ut ducimus
+                voluptates eius aspernatur dolorum accusamus a.</span
+              >
+              <!-- /User message content -->
+            </div>
+
             <!-- User Image -->
             <!-- TODO: Change to user-profile-image -->
             <div class="profile-image">
               <img src="./public/images/ai-profile.png" alt="" />
             </div>
             <!-- User Image -->
-
-            <!-- Message Content -->
-            <div>
-              <!-- User name -->
-              <span></span>
-              <!-- /User name -->
-
-              <!-- User message content -->
-              <span></span>
-              <!-- /User message content -->
-            </div>
             <!-- /Message Content -->
           </div>
           <!-- /User Balloon -->
