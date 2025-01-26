@@ -7,6 +7,7 @@
   --user-regular-text-color: #1f1e1d;
 
   --ia-chat-name-color: #818182;
+  --ia-chat-background-balloon-color: rgba(5, 5, 5, 0.86);
   --ia-action-text-color: #aad0f2;
   --ai-regular-text-color: #d3d2cb;
 
@@ -124,5 +125,23 @@ body {
 }
 
 .main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   padding: 16px;
+}
+
+.character-message-balloon {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 12px;
+
+  & .character-message-content {
+    width: 60%;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: var(--ia-chat-background-balloon-color);
+    color: var(--ai-regular-text-color);
+  }
 }
