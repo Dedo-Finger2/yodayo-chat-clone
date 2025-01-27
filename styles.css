@@ -227,3 +227,25 @@ body {
     gap: 4px;
   }
 }
+
+.model-and-config {
+  /* background-color: red; */
+  position: absolute;
+  top: 1rem;
+  right: 14rem;
+  color: white;
+  display: flex;
+  gap: 20px;
+
+  & div {
+    background-color: var(--button-background-color);
+    padding: 12px;
+  }
+
+  & div:nth-child(1) {
+    border-radius: 8px;
+  }
+  & div:nth-child(2) {
+    border-radius: 100%;
+  }
+}
